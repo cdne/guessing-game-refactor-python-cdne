@@ -11,13 +11,13 @@ a.append(random.randint(1, 99))
 a.append(random.randint(1, 99))
 a.append(random.randint(1, 99))
 a.append(random.randint(1, 99))
-for i in range(10):
+for index in range(10):
     g = int(input("Enter an integer from 1 to 99: "))
-    while a[i] != g:
-        if g < a[i]:
+    while a[index] != g:
+        if g < a[index]:
             print("guess is low")
             g = int(input("Enter an integer from 1 to 99: "))
-        elif g > a[i]:
+        elif g > a[index]:
             print("guess is high")
             g = int(input("Enter an integer from 1 to 99: "))
         else:
@@ -35,15 +35,17 @@ b.append(random.randint(1, 49))
 b.append(random.randint(1, 49))
 b.append(random.randint(1, 49))
 b.append(random.randint(1, 49))
-for i in range(10):
+for index in range(10):
     g = int(input("Enter an integer from 1 to 49: "))
-    while b[i] != g:
-        if g < b[i]:
+    while b[index] != g:
+        if g < b[index]:
             print("guess is low")
             g = int(input("Enter an integer from 1 to 49: "))
-        elif g > b[i]:
+        elif g > b[index]:
             print("guess is high")
             g = int(input("Enter an integer from 1 to 49: "))
         else:
             break
     print("you guessed it!")
+
+
