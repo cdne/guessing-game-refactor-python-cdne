@@ -1,49 +1,31 @@
 import math
 import random
-a = []
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
-a.append(random.randint(1, 99))
+numbers_list = []
 for index in range(10):
-    g = int(input("Enter an integer from 1 to 99: "))
-    while a[index] != g:
-        if g < a[index]:
+    numbers_list.append(random.randint(1, 99))
+    guess = int(input("Enter an integer from 1 to 99: "))
+    while numbers_list[index] != guess:
+        if guess < numbers_list[index]:
             print("guess is low")
-            g = int(input("Enter an integer from 1 to 99: "))
-        elif g > a[index]:
+            guess = int(input("Enter an integer from 1 to 99: "))
+        elif guess > numbers_list[index]:
             print("guess is high")
-            g = int(input("Enter an integer from 1 to 99: "))
+            guess = int(input("Enter an integer from 1 to 99: "))
         else:
             break
     print("you guessed it!")
 
-b = []
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
-b.append(random.randint(1, 49))
+numbers_list_two = []
 for index in range(10):
-    g = int(input("Enter an integer from 1 to 49: "))
-    while b[index] != g:
-        if g < b[index]:
+    numbers_list_two.append(random.randint(1, 49))
+    guess = int(input("Enter an integer from 1 to 49: "))
+    while numbers_list_two[index] != guess:
+        if guess < numbers_list_two[index]:
             print("guess is low")
-            g = int(input("Enter an integer from 1 to 49: "))
-        elif g > b[index]:
+            guess = int(input("Enter an integer from 1 to 49: "))
+        elif guess > numbers_list_two[index]:
             print("guess is high")
-            g = int(input("Enter an integer from 1 to 49: "))
+            guess = int(input("Enter an integer from 1 to 49: "))
         else:
             break
     print("you guessed it!")
